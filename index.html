@@ -55,65 +55,9 @@
         </div>
       </figure>
 
-      <footer class="ticker" aria-hidden="true">
-        <div class="ticker__label">SISTE</div>
-        <div class="ticker__viewport">
-          <div class="ticker__track">
-            <div class="ticker__row">
-              <span>TOTTENHAM HOTSPUR</span>
-              <span class="ticker__sep">●</span>
-              <span>DAGER SIDEN SISTE TROFÉ: <b id="dager">…</b></span>
-              <span class="ticker__sep">●</span>
-              <span>VINAI VENKATESHAM · CEO · 16 ÅR I ARSENAL</span>
-              <span class="ticker__sep">●</span>
-              <span>JOHAN LANGE · TECHNICAL DIRECTOR · TIDL. ASTON VILLA</span>
-              <span class="ticker__sep">●</span>
-              <span>«PROSJEKTET ER LANGSIKTIG»</span>
-              <span class="ticker__sep">●</span>
-              <span>WOL 0–0 TOT · 30:03 · USA NETWORK</span>
-              <span class="ticker__sep">●</span>
-              <span>NESTE MANAGER ANNONSERES SNART</span>
-              <span class="ticker__sep">●</span>
-              <span>DATAEN SIER FORTSATT GRØNT</span>
-              <span class="ticker__sep">●</span>
-              <span>FAVORITTSPILLER: GRATIS</span>
-              <span class="ticker__sep">●</span>
-              <span>HOVEDMÅL FOR SESONGEN: TOPP FIRE</span>
-              <span class="ticker__sep">●</span>
-            </div>
-            <div class="ticker__row" aria-hidden="true">
-              <span>TOTTENHAM HOTSPUR</span>
-              <span class="ticker__sep">●</span>
-              <span>DAGER SIDEN SISTE TROFÉ: <b class="dager-clone">…</b></span>
-              <span class="ticker__sep">●</span>
-              <span>VINAI VENKATESHAM · CEO · 16 ÅR I ARSENAL</span>
-              <span class="ticker__sep">●</span>
-              <span>JOHAN LANGE · TECHNICAL DIRECTOR · TIDL. ASTON VILLA</span>
-              <span class="ticker__sep">●</span>
-              <span>«PROSJEKTET ER LANGSIKTIG»</span>
-              <span class="ticker__sep">●</span>
-              <span>WOL 0–0 TOT · 30:03 · USA NETWORK</span>
-              <span class="ticker__sep">●</span>
-              <span>NESTE MANAGER ANNONSERES SNART</span>
-              <span class="ticker__sep">●</span>
-              <span>DATAEN SIER FORTSATT GRØNT</span>
-              <span class="ticker__sep">●</span>
-              <span>FAVORITTSPILLER: GRATIS</span>
-              <span class="ticker__sep">●</span>
-              <span>HOVEDMÅL FOR SESONGEN: TOPP FIRE</span>
-              <span class="ticker__sep">●</span>
-            </div>
-          </div>
-        </div>
-      </footer>
     </main>
 
     <script>
-      const sisteTrofe = new Date('2008-03-01T00:00:00Z');
-      const dager = Math.floor((Date.now() - sisteTrofe) / 86400000).toLocaleString('no-NO');
-      document.getElementById('dager').textContent = dager;
-      document.querySelector('.dager-clone').textContent = dager;
-
       const clock = document.getElementById('clock');
       const tick = () => {
         const d = new Date();

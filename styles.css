@@ -135,8 +135,8 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: center 30%;
-  max-height: calc(100vh - 160px);
-  max-height: calc(100dvh - 160px);
+  max-height: calc(100vh - 68px);
+  max-height: calc(100dvh - 68px);
 }
 
 .bug {
@@ -214,89 +214,18 @@ img {
   font-weight: 500;
 }
 
-/* ---- ticker ---- */
-.ticker {
-  display: flex;
-  align-items: stretch;
-  background: var(--yellow);
-  color: #0a0a0e;
-  height: 44px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 0.92rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  border-top: 2px solid #000;
-}
-
-.ticker__label {
-  flex: 0 0 auto;
-  background: var(--red);
-  color: #fff;
-  display: grid;
-  place-items: center;
-  padding: 0 1.2rem;
-  font-family: 'Anton', sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 0.18em;
-  font-weight: 400;
-}
-
-.ticker__viewport {
-  flex: 1 1 auto;
-  min-width: 0;
-  overflow: hidden;
-  position: relative;
-}
-
-.ticker__track {
-  display: flex;
-  width: max-content;
-  height: 100%;
-  align-items: center;
-  animation: tickerscroll 80s linear infinite;
-}
-
-.ticker__row {
-  display: flex;
-  align-items: center;
-  gap: 1.4rem;
-  padding: 0 1.4rem;
-  white-space: nowrap;
-}
-
-.ticker__sep {
-  color: var(--red);
-  font-size: 0.7rem;
-  transform: translateY(-1px);
-}
-
-@keyframes tickerscroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .ticker__track { animation: none; }
   .live i { animation: none; }
 }
 
 /* ---- responsive ---- */
 @media (max-width: 700px) {
   .frame img {
-    max-height: calc(100vh - 140px);
-    max-height: calc(100dvh - 140px);
+    max-height: calc(100vh - 80px);
+    max-height: calc(100dvh - 80px);
   }
   .lower-third {
     padding: 1rem 1rem 1.2rem;
-  }
-  .ticker {
-    height: 38px;
-    font-size: 0.78rem;
-  }
-  .ticker__label {
-    font-size: 1rem;
-    padding: 0 0.8rem;
   }
 }
 
